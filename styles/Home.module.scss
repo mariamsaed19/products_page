@@ -1,0 +1,40 @@
+@import "./variables.scss";
+.container {
+  margin-top: 43px;
+  margin-left: 41px;
+  display: grid;
+  grid-template-areas: 'filter main';
+  grid-template-columns: 228px auto;
+
+}
+.filter{
+  background-color: $list-bcg;
+  grid-area: filter;
+  border-radius: 15px;
+  width: 228px;
+  height: 275px;
+}
+.main{
+  grid-area: main ;
+  .pageTitle{
+    height: 42px;
+    margin-left: 34px;
+    color: $main-title-color;
+    font: 35px  $main-font-type ;
+    font-weight: 700;
+    text-shadow: $shadow;
+
+  }
+  .pageSubtitle{
+    margin-top: 24px;
+    margin-left: 34px;
+    height: 30px;
+    color: $sub-title-color;
+    font: 25px  $main-font-type ;
+    font-weight: 500;
+    text-shadow: $shadow;
+
+  }
+
+
+}

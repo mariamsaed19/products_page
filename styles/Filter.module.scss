@@ -1,0 +1,56 @@
+@import "./variables.scss";
+.title {
+  margin: 0;
+  margin-top: 24px;
+  margin-left: 30px;
+  color: $filter-title-color;
+  font: 20px $main-font-type;
+  font-weight: 300;
+}
+.line {
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 11px;
+  margin-bottom: 36px;
+  width: 160px;
+}
+
+.items {
+  :global(.rmsc .dropdown-container) {
+    margin-left: 25px;
+    margin-bottom: 12.5px;
+    background-color: $item-bcg;
+    width: $filter-item-width;
+    height: $filter-item-height;
+    border: none;
+  }
+  :global(.rmsc .gray) {
+    color: $items-color;
+    font: 17px $main-font-type;
+    font-weight: 400;
+  }
+  :global(.dropdown-heading-dropdown-arrow) {
+    stroke: $filter-title-color;
+  }
+  :global(.dropdown-heading-value) {
+    color: $items-color;
+  }
+  :global(.rmsc .dropdown-content .panel-content) {
+    background-color: $item-bcg;
+    color: $items-color;
+  }
+  :global(.rmsc .search input) {
+    color: $items-color;
+  }
+
+ :global( .rmsc .select-item:hover) {
+  background:$filter-title-color;
+}
+:global( .rmsc .select-item:focus) {
+    background:none;
+  }
+
+:global(.rmsc .select-item.selected) {
+  background: $filter-title-color;
+}
+}

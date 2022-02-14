@@ -1,0 +1,116 @@
+@import "./variables.scss";
+.prodCard {
+  display: grid;
+  grid-template-areas:
+    "img prodName"
+    "img brandName"
+    "img prodPrice"
+    "loc date"
+    "des des";
+  width: $prod-card-width;
+  height: $prod-card-height;
+  grid-template-columns: 90px auto;
+  grid-template-rows: 26px 24px 25px 24px 25px;
+  border-radius: 4.69px;
+  background-color: $item-bcg;
+  margin-top: 21px;
+  margin-left: 20px;
+  :last-child{
+      margin-right: 43px;
+  }
+}
+
+.prodImg img {
+  margin-left: 12px;
+  margin-top: 10px;
+  width: $prod-img-width;
+  height: $prod-img-height;
+  grid-area: img;
+}
+.prodName {
+  height: 16px;
+  width: 93px;
+  margin-left: 20px;
+  margin-right: 13px;
+  margin-top: 13px;
+  color: $items-color;
+  font: 15px $main-font-type;
+  font-weight: 400;
+  grid-area: prodName;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.brandName {
+  height: 14px;
+  margin-left: 22px;
+  margin-top: 10px;
+  color: $prod-details-color;
+  font: 13px $main-font-type;
+  font-weight: 400;
+  grid-area: brandName;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.prodPrice {
+  height: 15px;
+  margin-left: 20px;
+  margin-top: 11px;
+  color: $items-color;
+  font: 13px $main-font-type;
+  font-weight: 400;
+  grid-area: prodPrice;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  span {
+    font-size: 15px;
+    font-weight: 600;
+    color: $prod-price-color;
+  }
+}
+.date {
+  height: 14px;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: $prod-details-color;
+  font: 12px $main-font-type;
+  font-weight: 400;
+  grid-area: date;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  span {
+    font: 13px $prod-date-font-type;
+    font-weight: 600;
+    color: $prod-price-color;
+  }
+}
+.loc {
+  height: 14px;
+  width: 90px;
+  margin-top: 15px;
+  margin-left: 12px;
+  color: $prod-details-color;
+  font: 13px $main-font-type;
+  font-weight: 400;
+  grid-area: loc;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.des {
+  height: 15px;
+  width: 183px;
+  margin-top: 14px;
+  margin-left: 12px;
+  color: $prod-details-color;
+  font: 12px $main-font-type;
+  font-weight: 400;
+  grid-area: des;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
